@@ -20,6 +20,9 @@ Run only specific, relevant scripts (safely)
 Phase 6: OS Detection
 This is the loudest phase and often triggers IDS/IPS
 
+Phase 7: Netcat Enumeration
+This will give you extra info through netcat
+
 1. Save the script: nano stealth_enum.sh
 2. Make it executable: chmod +x stealth_enum.sh
 3. Run it: ./stealth_enum.sh 10.129.2.18
