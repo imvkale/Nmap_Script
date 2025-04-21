@@ -47,7 +47,7 @@ nmap -Pn --script vuln -p "$OPEN_PORTS" "$TARGET" -oN "$OUTPUT_DIR/phase5b_vuln.
 echo "[*] Phase 6: OS detection"
 nmap -Pn -O --osscan-limit --osscan-guess "$TARGET" -oN "$OUTPUT_DIR/phase6_osdetect.txt"
 
-# 🆕 Phase 7: Netcat Enumeration
+# Phase 7: Netcat Enumeration
 echo "[*] Phase 7: Netcat banner grab on open ports"
 NC_OUTPUT="$OUTPUT_DIR/phase7_netcat_banners.txt"
 IFS=',' read -ra PORTS <<< "$OPEN_PORTS"
