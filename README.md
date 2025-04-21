@@ -1,7 +1,24 @@
 # Nmap_Script
 
 I have made a Bash script that automates the 6-phase Nmap scanning strategy
-  
+
+Phase 1: Host Discovery
+Identify live hosts without port scanning.
+
+Phase 2: Quick Top 100 Ports
+Get fast intel on common services.
+
+Phase 3: Full Port Scan (All 65535 Ports)
+Find hidden services.
+
+Phase 4: Deep Service Version Detection
+Only scan ports you found open in Phase 3
+
+Phase 5: Targeted Script Scan
+Run only specific, relevant scripts (safely)
+
+Phase 6: OS Detection
+This is the loudest phase and often triggers IDS/IPS
 
 1. Save the script: nano stealth_enum.sh
 2. Make it executable: chmod +x stealth_enum.sh
