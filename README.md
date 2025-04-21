@@ -1,7 +1,7 @@
 # Nmap_Script
 
-I Have made a Bash script which will 
-
+I have made a Bash script that automates the 6-phase Nmap scanning strategy
+  
 
 1. Save the script: nano stealth_enum.sh
 2. Make it executable: chmod +x stealth_enum.sh
