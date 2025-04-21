@@ -35,7 +35,7 @@ else
 
     # Phase 5: Targeted NSE Scripts
     echo "[*] Phase 5: Targeted NSE scripts"
-    nmap -Pn --script=http-title,smb-os-discovery -p "$OPEN_PORTS" "$TARGET" -oN "$OUTPUT_DIR/phase5_nse.txt"
+    nmap -Pn --script=http-title,smb-os-discovery,vuln -p "$OPEN_PORTS" "$TARGET" -oN "$OUTPUT_DIR/phase5_nse.txt"
 fi
 
 # Phase 6: OS Detection (Loud)
